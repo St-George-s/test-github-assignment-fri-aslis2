@@ -7,7 +7,7 @@ days_open = []
 height = []
 
 def read_data():
-    with open("coursework/2023/attractions.csv", 'r' ) as file:
+    with open("coursework/2023/test.csv", 'r' ) as file:
         reader = csv.reader(file)
         header = next(reader)
         for row in reader:
@@ -26,8 +26,8 @@ def find_max(attraction, visitors):
         if visitors[counter] > max_value:
             max_value = visitors[counter]
             max_index = counter
-            print("The most visited attraction is " + attraction[max_index] + " with " + str(max_value) + " visitors ")
-            return attraction[max_index], visitors
+    print("The most visited attraction is " + attraction[max_index] + " with " + str(max_value) + " visitors ")
+    return attraction[max_index], visitors
 
 def find_min(attraction, visitors):
     min_value = visitors[0] 
@@ -36,8 +36,8 @@ def find_min(attraction, visitors):
         if visitors[counter] > min_value:
             min_value = visitors[counter]
             min_index = counter
-            print("The least visited attraction is " + attraction[min_index] + " with " + str(min_value) + " visitors")
-            return attraction[min_index], visitors
+    print("The least visited attraction is " + attraction[min_index] + " with " + str(min_value) + " visitors")
+    return attraction[min_index], visitors
 
 def findRollerCoastersService(attraction, category, days_open):
     # Create ‘service.csv’ file 
