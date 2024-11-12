@@ -1,3 +1,3 @@
-SELECT * 
-FROM Tracks 
-WHERE duration_ms > 200000;
+SELECT artist_name 
+FROM Artists 
+WHERE artist_name LIKE '%t' and 't%';
