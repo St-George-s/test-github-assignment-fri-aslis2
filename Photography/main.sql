@@ -1,3 +1,3 @@
-SELECT title, date_taken 
-FROM Photos 
-WHERE date_taken = (SELECT MAX(date_taken) FROM Photos);
+SELECT COUNT(*) AS [Photo Count]
+FROM Photos
+WHERE photographer_id IN (SELECT photographer_id FROM Photographers WHERE experience_years > 5);
