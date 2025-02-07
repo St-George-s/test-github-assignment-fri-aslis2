@@ -1,10 +1,12 @@
-The prize winning members are:TeressaJones
+The prize winning members are:
+TeressaJones
 RossDurrant
 IanHunter
 JamesKerr
 TisaSullivan
 AlbertNvodo
-The number of whole marathons walked by each member isSusan,Brown,1
+The number of whole marathons walked by each member is:
+Susan,Brown,1
 Teressa,Jones,15
 Martin,Daly,9
 Ross,Durrant,15
