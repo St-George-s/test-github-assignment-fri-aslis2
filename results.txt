@@ -6,6 +6,7 @@ JamesKerr
 TisaSullivan
 AlbertNvodo
 The number of whole marathons walked by each member is:
+Nikolai,Bryant,5
 Susan,Brown,1
 Teressa,Jones,15
 Martin,Daly,9

@@ -10,9 +10,14 @@ class Sightings:
 def upppercase(word):
     # Get ASCII value of first character
     firstChar = ord(word[0])
+    if firstChar >= 97 and firstChar <=122:
+        firstChar = firstChar - 32 
+        word = (chr(firstChar) + word[1:])
+    return word 
+
 
 def read_data():
-    file ="coursework/2022/mammals.txt"
+    file ="coursework software/2022/mammals.txt"
     with open(file,'r') as file:
         reader = csv.reader(file)
         # next(reader)
@@ -37,6 +42,7 @@ def find_sightings_by_mammal(sightings):
     town = input("Enter town: ")
     town = upppercase(town)
     mammal = input("Enter mammal: ")
+    mammal = upppercase(mammal)
     # Same here for mammal
     print("The dates of sightings were:")
     for sighting in sightings:
@@ -49,11 +55,16 @@ def count_sightings_per_date(sightings):
     count = 1
 
     for sighting in sightings[1:]:
-        date = sighting.date
-        date_counts[date] = date_counts.get(date, 0) + 1
-    
-    for date, count in sorted(date_counts.items()):
-        print(f"{date}: {count} sightings")
+        if dayToCount == sighting[0].date:
+            count = count + 1 
+        else:
+            print(dayToCount + count)
+            dayToCount = sighting[0].date
+            count = 1 
+        print("On " , dayToCount, "there were ", count,"sightings.")
+
+
+
 #main
 sightings = read_data()
 find_max(sightings)

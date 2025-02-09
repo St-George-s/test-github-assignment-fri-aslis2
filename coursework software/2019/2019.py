@@ -8,7 +8,7 @@ class Members:
 
 # Comment
 def read_data():
-    file ="coursework/2019/members.txt"
+    file ="coursework software/2019/members.txt"
     with open(file,'r') as file:
         reader = csv.reader(file)
         members = []
