@@ -44,7 +44,7 @@ def find_max_employees(numEmployees):
 
     found = 0 
     for employees in numEmployees:
-        if employees <= 0.1 * max_value:
+        if employees >= 0.9 * max_value:
             found += 1 
     print(str(found) + " companies employ within 10% of " + str(max_value))
 
