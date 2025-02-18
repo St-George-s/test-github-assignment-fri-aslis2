@@ -12,7 +12,7 @@ def read_data():
     with open(file,'r') as file:
         reader = csv.reader(file)
         members = []
-        # Crete a record for each row
+        # Create a record for each row
         for row in reader :
             newRecord = Members (row[0], row[1], float(row[2]))
             members.append(newRecord)
