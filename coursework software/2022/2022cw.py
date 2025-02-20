@@ -71,3 +71,20 @@ find_max(sightings)
 find_sightings_by_mammal(sightings)
 count_sightings_per_date(sightings)
         
+
+count = 0
+    delivered = "Delivery"
+    for order in orders[0:]:
+        if delivered == orders[0].option  :
+            count = count + 1 
+        else:
+            count = count
+    print("Total number of orders delivered to date: " + str(count))
+
+
+ with open('winningCustomer.txt', 'w', newline= '' ) as file:
+        for order in orders:
+            if position >= 0:
+                file.write(orders.orderNum + "," + orders.email + "," + orders.cost + "\n" )
+            else:
+                file.write("No winner" + "\n")
